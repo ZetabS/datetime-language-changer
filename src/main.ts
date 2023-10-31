@@ -35,10 +35,6 @@ export default class SetMomentLocalePlugin extends Plugin {
 	}
 }
 
-function createFragmentWithHTML(html: string) {
-	return createFragment((documentFragment) => (documentFragment.createDiv().innerHTML = html));
-}
-
 class SettingTab extends PluginSettingTab {
 	plugin: SetMomentLocalePlugin;
 
@@ -52,13 +48,22 @@ class SettingTab extends PluginSettingTab {
 
 		containerEl.empty();
 
-		new Setting(containerEl).setName(
-			createFragmentWithHTML(
-				`<p style="color: red">WARNING: DO NOT DELETE or DISABLE this plugin.</p>
-        Obsidian basically does NOT support to change internal "moment.js" locale.<br>
-        As a result, I couldn't fix the bug where the locale does not change when the plugin is disabled.`
-			)
-		);
+		containerEl.createEl('h3', {
+			text: `WARNING: DO NOT DELETE or DISABLE this plugin.`,
+			attr: { style: 'color: red' }
+		});
+
+		const text = containerEl.createEl('p');
+
+		text.createEl('span', {
+			text: `Obsidian basically does NOT support to change internal "moment.js" locale.`
+		});
+
+		text.createEl('br');
+
+		text.createEl('span', {
+			text: `As a result, I couldn't fix the bug where the locale does not change when the plugin is disabled.`
+		});
 
 		new Setting(containerEl)
 			.setName('Locale')
