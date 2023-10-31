@@ -1,7 +1,7 @@
 {
-	"name": "obsidian-sample-plugin",
+	"name": "datetime-language-changer",
 	"version": "1.0.0",
-	"description": "This is a sample plugin for Obsidian (https://obsidian.md)",
+	"description": "Customize the language used for datetime formatting by changing moment.js's locale.",
 	"main": "main.js",
 	"scripts": {
 		"dev": "node esbuild.config.mjs",
