@@ -1,7 +1,7 @@
 {
 	"id": "datetime-language-changer",
 	"name": "Datetime Language Changer",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"minAppVersion": "0.15.0",
 	"description": "Customize the language used for datetime formatting by changing moment.js's locale.",
 	"author": "Zetab_S",
