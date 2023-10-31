@@ -1,6 +1,6 @@
 # Datetime Language Changer
 
-This is a Obsidian plugin that allows you to customize the language used for datetime formatting by changing moment.js's locale.
+Customize the language used for datetime formatting by changing moment.js's locale.
 
 ## WARNING: DO NOT DELETE or DISABLE this plugin once installed
 
@@ -16,12 +16,12 @@ As a result, I couldn't fix the bug where the locale does not change when the pl
 ## Installation
 
 1. Open Obsidian.
-2. Navigate to Settings > Community plugins.
+2. Navigate to Settings → Community plugins.
 3. Search for "Datetime Language Changer" and click "Install".
 4. Click "Enable".
 
 ## Usage
 
 1. Open Obsidian.
-2. Navigate to Settings > Datetime Language Changer.
+2. Navigate to Settings → Datetime Language Changer.
 3. Customize locale to your preference.
